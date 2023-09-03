@@ -3,12 +3,12 @@ from pathlib import Path
 import time
 
 import __init__
-from common import config
+from app.common import config
 
 timestr = time.strftime("%Y%m%d_%H%M%S")
 
 path = Path(config.LOGS_PATH, f"{config.APPLICATION_NAME}_{timestr}.log")
-path.mkdir(mode=0o777, parents=True, exist_ok=True)
+Path(config.LOGS_PATH).mkdir(mode=0o777, parents=True, exist_ok=True)
 
 file_handler = logging.FileHandler(path)
 console_handler = logging.StreamHandler()
