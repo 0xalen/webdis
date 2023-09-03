@@ -2,7 +2,6 @@ import logging.config
 from pathlib import Path
 import time
 
-import __init__
 from app.common import config
 
 timestr = time.strftime("%Y%m%d_%H%M%S")
@@ -18,6 +17,4 @@ file_handler.setFormatter(logging.Formatter('%(asctime)s - %(message)s'))
 
 logger = logging.getLogger(__name__)
 logger.addHandler(file_handler)
-
-logger.info(f"Version: {__init__.__version__}")
 
