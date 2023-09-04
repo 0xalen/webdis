@@ -168,5 +168,8 @@ logs/*.log
 logs/*.csv
 !.gitkeep
 *.idea/*
-/llm-security.build/
-/llm-security.bin
+*.bin
+*.build/
+*.dist/
+*.onefile-build/
+

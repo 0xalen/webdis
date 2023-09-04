@@ -10,5 +10,5 @@ if sys.platform == "win32":
 else:
     venv_streamlit = 'venv/bin/streamlit'
 
-args = [venv_streamlit, 'run', 'main.py']
+args = [venv_streamlit, 'run', 'app/main.py']
 subprocess.run(args)
