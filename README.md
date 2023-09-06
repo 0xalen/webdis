@@ -15,6 +15,9 @@ Afterwards it can by ran with:
 `docker run -p 8501:8501 webdis`
 
 Run in the brackground:
+`docker run --rm -d -p 8501:8501 --name webdis-dev webdis`
+
+Run in the foreground:
 `docker run --rm -ti -p 8501:8501 --name webdis-dev webdis`
 
 It uses python 3.11 and it runs by default on port 8501.
